@@ -12,7 +12,11 @@ function read (id, callback) {
         } else {
             rd = JSON.parse(rdata);
         }
-        return callback(null, rd[id+"sc"] + ";" + rd[id+"mc"] + ";" + rd[id+"sn"]);
+        if (String(rd[id+"sn"]) === "undefined") {
+            return callback(null, ";;");
+        } else {
+            return callback(null, rd[id+"sc"] + ";" + rd[id+"mc"] + ";" + rd[id+"sn"]);
+        }
     });
 }
 
