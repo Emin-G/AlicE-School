@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ."
   },
-  "author": "eminG",
+  "author": "Emin-G",
   "homepage": "http://alices.kro.kr",
   "engines": {
     "node": "12.x"
